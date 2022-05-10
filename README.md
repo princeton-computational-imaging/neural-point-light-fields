@@ -1,6 +1,6 @@
 # Neural Point Light Fields (CVPR 2022)
 
-<img src="https://light.princeton.edu/wp-content/uploads/2022/03/overview_pointLF.png">
+<img src="https://light.princeton.edu/wp-content/uploads/2022/05/neural_pointLF_overview_transparent.png">
 
 ### [Project Page](https://light.princeton.edu/publication/neural-point-light-fields) 
 #### Julian Ost, Issam Laradji, Alejandro Newell, Yuval Bahat, Felix Heide
