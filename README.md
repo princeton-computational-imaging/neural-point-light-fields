@@ -1,6 +1,6 @@
 # Neural Point Light Fields (CVPR 2022)
 
-<img src="https://light.princeton.edu/wp-content/uploads/2022/03/new_teaser_pointLF.png" width="720">
+<img src="https://light.princeton.edu/wp-content/uploads/2022/03/overview_pointLF.png" width="720">
 
 ### [Project Page](https://light.princeton.edu/publication/neural-point-light-fields) 
 #### Julian Ost, Issam Laradji, Alejandro Newell, Yuval Bahat, Felix Heide
@@ -20,19 +20,19 @@ videos along unseen trajectories previously only feasible to generate by explici
 
 ---
 
-### Data Preperation
+### Data Preparation
 #### Waymo
 
-1. Download the compressed data from the Waymo Open Dataset:
-[Wayno Validation Tar Files](https://console.cloud.google.com/storage/browser/waymo_open_dataset_v_1_3_1/validation?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&prefix=&forceOnObjectsSortingFiltering=false)
+1. Download the compressed data of the Waymo Open Dataset:
+[Waymo Validation Tar Files](https://console.cloud.google.com/storage/browser/waymo_open_dataset_v_1_3_1/validation?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&prefix=&forceOnObjectsSortingFiltering=false)
 
 2. To run the code as used in the paper, store as follows: `./data/validation/validation_xxxx/segment-xxxxxx`
    
-3. Neural Point Light Fields is well tested on the segments mentioned in the [Supplementary](https://light.princeton.edu/wp-content/uploads/2022/04/NeuralPointLightFields-Supplementary.pdf)
+3. Neural Point Light Fields is well tested on the segments mentioned in the [Supplementary](https://light.princeton.edu/wp-content/uploads/2022/04/NeuralPointLightFields-Supplementary.pdf) and shown in the experiment group `pointLF_waymo_local`.
 
 ---
 
-### Install requirements
+### Requirements
 
 Environment setup
 ```
@@ -55,7 +55,7 @@ pip install --upgrade git+https://github.com/haven-ai/haven-ai
 ```
 
 ---
-### 2. Train and Validate
+### Training and Validation
 In the first run of a scene, the point clouds will be preprocessed, which might take some time. 
 If you want to train on unmerged point cloud data set `merge_pcd=False` in the config file. 
 
@@ -84,7 +84,7 @@ To test on local and low memory, choose `pointLF_waymo_local` instead of `pointL
 Adjustments of batch size, chunk size and number of rays will have an effect on necessary resources.
 
 ---
-### 3. Visualize the Results
+### Visualization of Results
 
 Follow these steps to visualize plots. Open `results.ipynb`, run the first cell to get a dashboard like in the gif below, click on the "plots" tab, then click on "Display plots". Parameters of the plots can be adjusted in the dashboard for custom visualizations.
 
@@ -93,7 +93,7 @@ Follow these steps to visualize plots. Open `results.ipynb`, run the first cell 
 </p>
 
 ---
-Citation
+#### Citation
 ```
 @InProceedings{ost2022pointlightfields,
     title   = {Neural Point Light Fields},
