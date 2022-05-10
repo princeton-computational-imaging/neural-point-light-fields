@@ -28,7 +28,7 @@ videos along unseen trajectories previously only feasible to generate by explici
 
 2. To run the code as used in the paper, store as follows: `./data/validation/validation_xxxx/segment-xxxxxx`
    
-3. Neural Point Light Fields is well tested on the segments mentioned in the [Supplementary](https://light.princeton.edu/wp-content/uploads/2022/04/NeuralPointLightFields-Supplementary.pdf) and shown in the experiment group `pointLF_waymo_local`.
+3. Neural Point Light Fields is well tested on the segments mentioned in the [Supplementary](https://light.princeton.edu/wp-content/uploads/2022/04/NeuralPointLightFields-Supplementary.pdf) and shown in the experiment group `pointLF_waymo_server`.
 
 ---
 
@@ -56,7 +56,7 @@ pip install --upgrade git+https://github.com/haven-ai/haven-ai
 
 ---
 ### Training and Validation
-In the first run of a scene, the point clouds will be preprocessed, which might take some time. 
+In the first iteration of a scene, the point clouds will be preprocessed and stored, which might take some time. 
 If you want to train on unmerged point cloud data set `merge_pcd=False` in the config file. 
 
 Train one specific scene from the Waymo Open data set:
