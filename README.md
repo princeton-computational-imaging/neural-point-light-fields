@@ -30,6 +30,9 @@ videos along unseen trajectories previously only feasible to generate by explici
    
 3. Neural Point Light Fields is well tested on the segments mentioned in the [Supplementary](https://light.princeton.edu/wp-content/uploads/2022/04/NeuralPointLightFields-Supplementary.pdf) and shown in the experiment group `pointLF_waymo_server`.
 
+
+4. Preprocess the data running: `./src/datasets/preprocess_Waymo.py -d "./data/validation/validation_xxxx/segment-xxxxxx" --no_data`
+
 ---
 
 ### Requirements
